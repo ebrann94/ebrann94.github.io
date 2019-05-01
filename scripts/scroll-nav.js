@@ -7,14 +7,12 @@
 
     const targets = {
         about: about.getBoundingClientRect().top,
-        // skills: skills.getBoundingClientRect().top,
         projects: projects.getBoundingClientRect().top,
         home: 0
     }
 
     const links = {
         about: document.getElementById('about-link'),
-        // skills: document.getElementById('skills-link'),
         projects: document.getElementById('projects-link'),
         home
     }
@@ -58,5 +56,9 @@
         links[key].addEventListener('click', () => {
             setupScroll(targets[key]);
         });
+    });
+
+    document.querySelector('.about-arrow').addEventListener('click', () => {
+        setupScroll(targets.about);
     });
 })();

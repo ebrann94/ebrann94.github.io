@@ -20,14 +20,27 @@
                         <li class="nav__link" id="projects-link">Projects</li>
                     </ul>
                 </nav>
-                <a href="#"><img src="/images/github-logo.png" alt="github logo"></a>
+                <div class="social-icons">
+                    <a href="#" class="social-link">
+                        <img src="/images/github-logo.png" alt="github logo" width="32px">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="/images/codepen-logo.png" alt="codepen logo" width="32px">
+                    </a>
+                </div>
             </header>
         </div>
         <div class="main-wrapper">
             <main>
                 <section id="home" class="section-container">
-                    <h1 class="section-title">Home</h1>
-                    <h1>Hi.</h1>
+                    <div class="home-wrapper">
+                        <h1 class="greeting">Hi.</h1>
+                        <p>I'm Ethan Brann, a front-end developer</p>
+                    </div>
+                    <div class="about-arrow">
+                        <p class="about-arrow__text">More About Me</p>
+                        <img src="/images/chevron-down-solid.svg" alt="down chevron" >
+                    </div>
                 </section>
                 <section id="about" class="section-container">
                     <h1 class="section-title">About</h1>
@@ -87,14 +100,51 @@
                         <a href="" class="project__demo-link"></a>
                     </div> -->
                     <div class="project-container">
-                        <div class="project__image-container" height="100px" width="150px" style="border: solid 1px black;">
-                            <img src="#" alt="" />
+                        <div class="project__image-container" height="100px" width="150px">
+                            <img src="./images/react-todo-app-compressed.jpg" alt="Check box" class="project__image"/>
                         </div>
                         <div class="project__info">
-                            <h3 class="project__title">Todo List</h3>
-                            <p class="project__description">A simple todo app</p>
-                            <a href="" class="project__github-link">Github</a>
-                            <a href="" class="project__demo-link">Demo</a>
+                            <h2 class="project__title">Todo List</h2>
+                            <p class="project__description">
+                                A simple todo list app. 
+                                Built with React, it makes use of the React Transition Group Library to give a better user experience.
+                            </p>
+                            <div class="project__links">
+                                <a href="" class="project__github-link project__link">Github</a>
+                                <a href="" class="project__demo-link project__link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project__image-container" height="100px" width="150px">
+                            <img src="./images/react-weather-app.png" alt="Check box" class="project__image"/>
+                        </div>
+                        <div class="project__info">
+                            <h2 class="project__title">Weather</h2>
+                            <p class="project__description">
+                                A web app that will give the current weather and forecast of a given location. 
+                                It was built in React and utilises the Open Weather Map API.
+                            </p>
+                            <div class="project__links">
+                                <a href="" class="project__github-link project__link">Github</a>
+                                <a href="" class="project__demo-link project__link">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project__image-container" height="100px" width="150px">
+                            <img src="./images/mattbrann.com-compressed.jpg" alt="Check box" class="project__image"/>
+                        </div>
+                        <div class="project__info">
+                            <h2 class="project__title">mattbrann.com</h2>
+                            <p class="project__description">
+                                A full stack website. The backend is built with node and Express.js.
+                                It has the functionality for the client to add and remove images so they manage their portfolio.
+                            </p>
+                            <div class="project__links">
+                                <a href="" class="project__github-link project__link">Github</a>
+                                <a href="" class="project__demo-link project__link">Demo</a>
+                            </div>
                         </div>
                     </div>
                 </section>

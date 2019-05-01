@@ -1,11 +1,10 @@
 .header-wrapper {
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
 
     height: 100vh;
-    /* width: 250px; */
-
 }
 
 header {
@@ -17,31 +16,33 @@ header {
     border-width: 0 3px;
 
     margin: 0 auto;
+    padding: 16px 0;
     text-align: center;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
     display: inline;
     cursor: pointer;
-
-    position: absolute;
-    top: 0;
-
-    padding-top: 30px;
 }
 
 .nav__link-list {
     list-style: none;
-    padding: 30px 0 150px 0;
+    padding: 0;
     margin: 0;
 }
 
 .nav__link {
-    margin: 40px 0;
+    margin: 48px 0;
     cursor: pointer;
+}
+
+.social-link {
+    display: block;
+
+    margin: 16px;
 }

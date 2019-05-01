@@ -1,0 +1,39 @@
+#home {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.home-wrapper {
+    height: 100%;
+}
+
+.greeting {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.about-arrow {
+    width: 200px;  
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+
+    margin: 16px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 24px;
+        height: 24px;
+
+        display: block; 
+    }
+
+    p {
+        margin: 0;
+    }
+}
+

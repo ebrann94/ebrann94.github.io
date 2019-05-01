@@ -1,0 +1,37 @@
+#about {
+    position: relative;
+}
+
+.skills-list-container {
+    margin: 64px 0;
+}
+
+.skills-flex-container {
+    display: flex;
+    /* justify-content: center; */
+    /* border: solid grey 1px;
+    border-radius: 5px;
+    padding: 20px; */
+}
+
+.topics {
+    text-align: right;
+    /* width: 300px; */
+    margin-right: 20px;
+}
+
+.skills-list-container p {
+    margin: 0 0 16px 0;
+}
+
+.technology-icons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 64px;
+}
+
+.technology-icon {
+    width: 30px;
+    height: 30px;
+}

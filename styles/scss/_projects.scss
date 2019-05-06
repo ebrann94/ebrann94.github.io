@@ -1,9 +1,5 @@
 .project-container {
     display: flex;
-    // border: solid rgba(0, 0, 0, 0.1) 1px;
-    // border-radius: 8px;
-
-    // border-bottom: grey solid 1px;
 
     margin: 64px 0;
 }
@@ -40,7 +36,6 @@
 
 .project__link {
     color: $highlight-colour;
-    text-decoration: none;
     margin: 0 0 0 0.5rem;
 }
 

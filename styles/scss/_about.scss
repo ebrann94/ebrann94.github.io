@@ -1,17 +1,27 @@
 #about {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.about__text {
+    margin: 48px 0;
+}
+
+.about__paragraph {
+    max-width: 540px;
+    line-height: 1.6rem;
 }
 
 .skills-list-container {
-    margin: 64px 0;
+    margin: 0;
 }
 
 .skills-flex-container {
     display: flex;
-    /* justify-content: center; */
-    /* border: solid grey 1px;
-    border-radius: 5px;
-    padding: 20px; */
 }
 
 .topics {
@@ -28,11 +38,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    position: absolute;
-    bottom: 0;
-
-    margin-bottom: 32px;
 }
 
 .technology-icon {

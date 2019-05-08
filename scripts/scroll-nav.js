@@ -1,16 +1,21 @@
-(function scrollNav() {
-    const about = document.querySelector('#about');
-    const projects = document.querySelector('#projects');
+window.addEventListener('load', scrollNav);
+
+function scrollNav() {
+    const about = document.getElementById('about');
+    const projects = document.getElementById('projects');
+    const contact = document.getElementById('contact');
 
     const targets = {
         about: about.getBoundingClientRect().top + window.scrollY,
         projects: projects.getBoundingClientRect().top + window.scrollY,
+        contact: contact.getBoundingClientRect().top + window.scrollY,
         home: 0
     }
 
     const links = {
         about: document.getElementById('about-link'),
         projects: document.getElementById('projects-link'),
+        contact: document.getElementById('contact-link'),
         home: document.querySelector('.logo')
     }
 
@@ -38,6 +43,8 @@
 
             if (time < 1) {
                 window.requestAnimationFrame(scroll);
+            } else {
+                window.scroll(0, target);
             }
         }
         window.requestAnimationFrame(scroll);
@@ -50,8 +57,4 @@
             setupScroll(targets[key]);
         });
     });
-
-    document.querySelector('.about-arrow').addEventListener('click', () => {
-        setupScroll(targets.about);
-    });
-})();
+};

@@ -58,3 +58,9 @@ function scrollNav() {
         });
     });
 };
+
+function mobileMenu() {
+    const menu = document.querySelector('nav');
+    const hb = document.querySelector('');
+
+}

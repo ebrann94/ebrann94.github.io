@@ -251,10 +251,16 @@ header {
   flex-grow: 1;
 }
 
+.project__tech-icon {
+  margin: 0 32px;
+  width: 32px;
+}
+
 .project__links {
   width: 33%;
   display: flex;
   justify-content: space-evenly;
+  border-left: 1px solid teal;
 }
 
 .project__link {

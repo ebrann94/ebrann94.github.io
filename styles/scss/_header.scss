@@ -37,6 +37,7 @@ header {
 }
 
 .nav__link {
+    width: 100%;
     margin: 16px 0;
     border: none;
     background: none;
@@ -50,4 +51,51 @@ header {
     display: block;
 
     margin: 16px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-open {
+    display: block;
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .header-wrapper {
+        height: $header-height;
+        width: 100vw;
+
+    }
+
+    header {
+        flex-direction: row;
+        position: relative;
+
+        background: $background-grey;
+        border-width: 0 0 3px 0;
+
+
+        z-index: 9999;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: $header-height;
+        left: 0;
+
+        width: 100vw;
+
+        background: white;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }

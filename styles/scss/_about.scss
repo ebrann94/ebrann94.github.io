@@ -18,10 +18,28 @@
 
 .skills-list-container {
     margin: 0;
+    display: inline-block;
+
+}
+
+.skills__heading {
+    display: inline-block;
+    border: white solid;
+    border-width: 0 0 1px 0;
+    padding: 0 8px;
+    margin: 0 0 -1px 8px;
+    z-index: 2;
+    position: relative;
+    letter-spacing: 2px;
 }
 
 .skills-flex-container {
+    background: white;
+    border: solid lightgrey 1px;
+    border-radius: 4px;
+    padding: 16px 16px 0 16px;
     display: flex;
+    //z-index: 1;
 }
 
 .topics {

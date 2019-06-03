@@ -1,5 +1,6 @@
 #projects {
-    background: $highlight-colour;
+    //background: $highlight-colour;
+     background: $background-gradient;
     color: white;
 }
 
@@ -19,14 +20,14 @@
     color: black;
     border-radius: 5px;
 
-    padding: 8px;
+    padding: 16px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     height: 100%;
 }
 
 .project__info-wrapper {
     display: flex;
-    padding: 0 0 8px 0;
+    padding: 0 0 16px 0;
 }
 
 .project__image-container {
@@ -46,13 +47,15 @@
 
 .project__title {
     margin: 16px 0;
+    letter-spacing: 1px;
 }
 
 .project__description {
     margin: 0;
-    padding: 0 0 0 16px;
+    padding: 0 0 0 32px;
     max-width: 540px;
     line-height: 1.5rem;
+    list-style: disc;
 }
 
 .project__footer {

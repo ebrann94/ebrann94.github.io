@@ -88,7 +88,7 @@
     
     function mobileMenu() {
         mobileMenuRunning = true;
-        console.log('Mobile Menu Running');
+        
         const menu = document.querySelector('nav');
         const hb = document.querySelector('.hamburger');
     

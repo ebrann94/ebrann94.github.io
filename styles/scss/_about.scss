@@ -12,7 +12,7 @@
 }
 
 .about__paragraph {
-    max-width: 540px;
+    max-width: 600px;
     line-height: 1.6rem;
 }
 
@@ -63,8 +63,4 @@
     width: 40px;
     height: 40px;
     transition: 200ms;
-}
-
-.technology-icon:hover {
-    transform: scale(1.2);
 }

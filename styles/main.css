@@ -62,11 +62,10 @@ footer {
 header {
   height: 100%;
   width: 100%;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.18);
   border-style: solid;
-  border-image: linear-gradient(to bottom, #00a3a3 0%, #0024c2 100%);
-  border-image-slice: 1;
-  border-width: 0 3px 0 0;
+  border-image: linear-gradient(to bottom, #00a3a3 0%, #0024c2 100%) 1;
+  border-width: 0 2px 0 0;
   margin: 0;
   padding: 16px 0;
   text-align: center;
@@ -213,7 +212,7 @@ header {
 }
 
 .about__paragraph {
-  max-width: 540px;
+  max-width: 600px;
   line-height: 1.6rem;
 }
 
@@ -262,10 +261,6 @@ header {
   width: 40px;
   height: 40px;
   transition: 200ms;
-}
-
-.technology-icon:hover {
-  transform: scale(1.2);
 }
 
 #projects {
@@ -320,6 +315,7 @@ header {
   margin: 0;
   padding: 0 0 0 32px;
   max-width: 540px;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   list-style: disc;
 }

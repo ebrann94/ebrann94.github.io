@@ -11,11 +11,7 @@ header {
     height: 100%;
     width: 100%;
    
-    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.18);
-    //border: solid $highlight-colour;
-    border-style: solid;
-    border-image: linear-gradient(to bottom, rgba(0,163,163,1) 0%, rgba(0,36,194,1) 100%) 1;
-    border-width: 0 2px 0 0;
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
 
     margin: 0;
     padding: 16px 0;
@@ -24,29 +20,45 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .logo {
-    display: inline;
+    display: inline-block;
     cursor: pointer;
 }
 
 .nav__link-list {
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.5);
+
+        //.nav__link {
+        //    color: rgba(0, 0, 0, 0.5);
+        //}
+    }
 }
 
 .nav__link {
     width: 100%;
-    margin: 16px 0;
+    margin: 0;
+    padding: 16px 0;
     border: none;
     background: none;
     cursor: pointer;
 
     font-size: 1rem;
     outline: none;
+
+    color: inherit;
+
+    &:hover {
+        color: $text-grey;
+    }
 }
 
 .social-link {
@@ -75,7 +87,7 @@ header {
         flex-direction: row;
         position: relative;
 
-        background: $background-grey;
+        background: white;
         border-width: 0 0 3px 0;
 
 

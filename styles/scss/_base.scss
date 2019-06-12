@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    /* font-family: 'Lato', sans-serif; */
+    background-color: white;
+
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    background-color: $background-grey;
+    // font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
     color: $text-grey;
 }
 
@@ -28,17 +28,15 @@ body {
 .section-container {
     height: 100%;
     min-height: 100vh;
-    padding: 16px 48px;
+    padding: 0 48px;
+    border: transparent 1px solid;
 }
 
 .section-title {
     font-size: 4rem;
     color: $highlight-colour;
-    margin: 0;
+    margin: 32px 0;
     letter-spacing: 2px;
-    //background: linear-gradient(rgba(0,163,163,1) 0%, rgba(0,36,194,1) 100%);
-    //-webkit-background-clip: text;
-    //-webkit-text-fill-color: transparent;
 }
 
 footer { 
@@ -53,6 +51,10 @@ footer {
         grid-template-areas: 
             "header"
             "main";
+    }
+
+    .main-wrapper {
+        max-width: 100vw;
     }
 
     .section-container {

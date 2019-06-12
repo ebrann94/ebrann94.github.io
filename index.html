@@ -13,7 +13,9 @@
     <div class="grid-container">
         <div class="header-wrapper">
             <header>
-                <img src="/images/logo-black.png" alt="log" width="100px" class="logo" />
+                <div class="logo-wrapper">
+                    <img src="/images/logo-black.png" alt="log" width="100px" class="logo"/>
+                </div>
                 <nav>
                     <ul class="nav__link-list">
                         <li><button class="nav__link" id="about-link">About</button></li>
@@ -95,200 +97,261 @@
                 </section>
                 <section id="projects" class="section-container">
                     <h1 class="section-title projects__title">Projects</h1>
-                    <div class="project-container">
-                        <h2 class="project__title">Todo List App</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="/images/project-screenshots/todo-fullstack-compressed.jpg" alt="Check box" class="project__image"/>
+                    <div class="projects-container">
+                        <div class="project-container">
+                            <h2 class="project__title">Todo List App</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="/images/project-screenshots/todo-fullstack-compressed.jpg"
+                                             alt="Check box" class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Fullstack app built using the MERN stack</li>
+                                            <li>A user can create a list of tasks to do and mark them as complete when
+                                                done
+                                            </li>
+                                            <li>User account system implemented using node.js and MongoDB and JWT for
+                                                authentication
+                                            </li>
+                                            <li>Allows a user to create an account so they can save their tasks and
+                                                access them elsewhere.
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>Fullstack app built using the MERN stack</li>
-                                        <li>A user can create a list of tasks to do and mark them as complete when done</li>
-                                        <li>User account system implemented using node.js and MongoDB and JWT for authentication</li>
-                                        <li>Allows a user to create an account so they can save their tasks and access them elsewhere.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/js.svg" alt="javascript logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/react.svg" alt="react logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/node.svg" alt="node logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/express.svg" alt="express logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/mongo.svg" alt="mongodb logo" class="technology-icon project__tech-icon">
-                                </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/todo-app-fullstack" target="_blank" class="project__github-link project__link">Code</a>
-                                    <a href="https://brann-todo-list.herokuapp.com/" target="_blank" class="project__demo-link project__link">Demo</a>
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/node.svg" alt="node logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/express.svg" alt="express logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/mongo.svg" alt="mongodb logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/todo-app-fullstack" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <a href="https://brann-todo-list.herokuapp.com/" target="_blank"
+                                           class="project__demo-link project__link">Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">mattbrann.com</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="./images/project-screenshots/mattbrann.com-compressed.jpg" alt="Check box" class="project__image"/>
+                        <div class="project-container">
+                            <h2 class="project__title">mattbrann.com</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="./images/project-screenshots/mattbrann.com-compressed.jpg"
+                                             alt="Check box" class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Built to showcase a photographer's portfolio.</li>
+                                            <li>Uses an express.js server using the handlebars templating engine</li>
+                                            <li>Includes a react app where the admin can configure what is shown onthe
+                                                site and upload new content
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>Built to showcase a photographer's portfolio.</li>
-                                        <li>Uses an express.js server using the handlebars templating engine</li>
-                                        <li>Includes a react app where the admin can configure what is shown onthe site and upload new content</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/html.svg" alt="html5 logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/node.svg" alt="node logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/express.svg" alt="express logo" class="technology-icon project__tech-icon">
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/html.svg" alt="html5 logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/node.svg" alt="node logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/express.svg" alt="express logo"
+                                             class="technology-icon project__tech-icon">
 
-                                </div>
-                                <div class="project__links">
-                                    <a href="" target="_blank" class="project__github-link project__link">Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">Weather</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="./images/project-screenshots/react-weather-app.png" alt="Check box" class="project__image"/>
-                                </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>React SPA</li>
-                                        <li>Fetches and presents the current weather and forecast for a user specified location</li>
-                                        <li>utilises the Open Weather Map API for weather data</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/sass.svg" alt="sass logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/js.svg" alt="javascript logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/react.svg" alt="react logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/webpack.svg" alt="webpack logo" class="technology-icon project__tech-icon">
-                                </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/react-weather-app" target="_blank" class="project__github-link project__link">Code</a>
-                                    <a href=" https://ebrann-weather-app.herokuapp.com/" target="_blank" class="project__demo-link project__link">Demo</a>
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="" target="_blank" class="project__github-link project__link">Code</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">Movie App</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="./images/project-screenshots/movie-app.png" alt="Check box" class="project__image"/>
+                        <div class="project-container">
+                            <h2 class="project__title">Weather</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="./images/project-screenshots/react-weather-app.png" alt="Check box"
+                                             class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>React SPA</li>
+                                            <li>Fetches and presents the current weather and forecast for a user
+                                                specified location
+                                            </li>
+                                            <li>utilises the Open Weather Map API for weather data</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>Built with React</li>
-                                        <li>Fetched data from TheMovieDB and presents it in a stylish, easy to understand way</li>
-                                        <li>Uses React Router create a multi-page application</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/sass.svg" alt="sass logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/js.svg" alt="javascript logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/react.svg" alt="react logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/webpack.svg" alt="webpack logo" class="technology-icon project__tech-icon">
-                                </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/react-movie-app" target="_blank" class="project__github-link project__link">Code</a>
-                                    <a href=" https://ebrann-movie.herokuapp.com/" target="_blank" class="project__demo-link project__link">Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">Budget App (WIP)</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="/images/project-screenshots/budget-app.png" alt="Check box" class="project__image"/>
-                                </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>Written in TypeScript and built with React</li>
-                                        <li>App built to help users manage a budget and get information about their spending</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/ts.svg" alt="typescript logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/react.svg" alt="react logo" class="technology-icon project__tech-icon">
-                                </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/budget-app" target="_blank" class="project__github-link project__link">Code</a>
-                                    <!-- <a href="" target="_blank" class="project__demo-link project__link">Demo</a> -->
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/sass.svg" alt="sass logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/webpack.svg" alt="webpack logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/react-weather-app" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <a href=" https://ebrann-weather-app.herokuapp.com/" target="_blank"
+                                           class="project__demo-link project__link">Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">Todo List Frontend</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" >
-                                    <img src="./images/project-screenshots/react-todo-app-compressed.jpg" alt="Check box" class="project__image"/>
+                        <div class="project-container">
+                            <h2 class="project__title">Movie App</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="./images/project-screenshots/movie-app.png" alt="Check box"
+                                             class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Built with React</li>
+                                            <li>Fetched data from TheMovieDB and presents it in a stylish, easy to
+                                                understand way
+                                            </li>
+                                            <li>Uses React Router create a multi-page application</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__info">
-                                    <p class="project__description">
-                                        A simple todo list app.
-                                        Built with React. It uses of the React Transition Group Library to give a better user experience.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/sass.svg" alt="sass logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/js.svg" alt="javascript logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/react.svg" alt="react logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/webpack.svg" alt="webpack logo" class="technology-icon project__tech-icon">
-                                </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/react-to-do-list-app" target="_blank" class="project__github-link project__link">Code</a>
-                                    <a href="https://ebrann-todo-frontend.herokuapp.com/" target="_blank" class="project__demo-link project__link">Demo</a>
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/sass.svg" alt="sass logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/webpack.svg" alt="webpack logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/react-movie-app" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <a href=" https://ebrann-movie.herokuapp.com/" target="_blank"
+                                           class="project__demo-link project__link">Demo</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-container">
-                        <h2 class="project__title">WebAudio Drum Machine</h2>
-                        <div class="project__card-wrapper">
-                            <div class="project__info-wrapper">
-                                <div class="project__image-container" height="100px" width="150px">
-                                    <img src="/images/project-screenshots/drum-machine.png" alt="Check box" class="project__image"/>
+                        <div class="project-container">
+                            <h2 class="project__title">Budget App (WIP)</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="/images/project-screenshots/budget-app.png" alt="Check box"
+                                             class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Written in TypeScript and built with React</li>
+                                            <li>App built to help users manage a budget and get information about their
+                                                spending
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__info">
-                                    <ul class="project__description">
-                                        <li>Drum machine app mimicking the Roland TR-909</li>
-                                        <li>Makes use of the WebAudio API to implement a sequencer and playback of audio files</li>
-                                    </ul>
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/ts.svg" alt="typescript logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/budget-app" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <!-- <a href="" target="_blank" class="project__demo-link project__link">Demo</a> -->
+                                    </div>
                                 </div>
                             </div>
-                            <div class="project__footer">
-                                <div class="project__technology-icons">
-                                    <img src="/images/technology/html.svg" alt="html5 logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/css3.svg" alt="css logo" class="technology-icon project__tech-icon">
-                                    <img src="/images/technology/js.svg" alt="javascript logo" class="technology-icon project__tech-icon">
+                        </div>
+                        <div class="project-container">
+                            <h2 class="project__title">Todo List Frontend</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container">
+                                        <img src="./images/project-screenshots/todo-frontend.png" alt="Check box"
+                                             class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>A simple todo list app.</li>
+                                            <li>Built with React.</li>
+                                            <li>Focused on creating a usable, well designed app</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="project__links">
-                                    <a href="https://github.com/ebrann94/webaudio-drum-machine" target="_blank" class="project__github-link project__link">Code</a>
-                                    <!-- <a href="" target="_blank" class="project__demo-link project__link">Demo</a> -->
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/sass.svg" alt="sass logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/webpack.svg" alt="webpack logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/react-to-do-list-app" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <a href="https://ebrann-todo-frontend.herokuapp.com/" target="_blank"
+                                           class="project__demo-link project__link">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-container">
+                            <h2 class="project__title">WebAudio Drum Machine</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="/images/project-screenshots/drum-machine.png" alt="Check box"
+                                             class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Drum machine app mimicking the Roland TR-909</li>
+                                            <li>Makes use of the WebAudio API to implement a sequencer and playback of
+                                                audio files
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/html.svg" alt="html5 logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/css3.svg" alt="css logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                             class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/webaudio-drum-machine" target="_blank"
+                                           class="project__github-link project__link">Code</a>
+                                        <!-- <a href="" target="_blank" class="project__demo-link project__link">Demo</a> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>

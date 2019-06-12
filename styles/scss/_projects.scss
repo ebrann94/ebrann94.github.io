@@ -9,14 +9,18 @@
     color: white;
 }
 
+.projects-container {
+    max-width: 800px;
+}
+
 .project-container {
-    margin: 32px 0 0 0;
-    max-width: 90%;
-    display: inline-block;
+    margin: 0 0 32px 0;
+    width: 100%;
+    //display: inline-block;
 }
 
 .project__card-wrapper {
-    background: $background-grey;
+    background: white;
     color: black;
     border-radius: 5px;
 
@@ -46,7 +50,7 @@
 }
 
 .project__title {
-    margin: 16px 0;
+    margin: 0 0 16px 0;
     letter-spacing: 1px;
 }
 
@@ -64,8 +68,10 @@
     border-top: 1px solid lighten($highlight-colour, 10%);
     height: 50px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
+
+    vertical-align: middle;
 
     padding: 8px 0 0 0;
 }
@@ -88,6 +94,7 @@
     width: 33%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     border-left: 1px solid $highlight-colour;
 }
@@ -96,6 +103,10 @@
     color: $highlight-colour;
     margin: 0 0 0 0.5rem;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .project__link:visited {
@@ -106,8 +117,14 @@
     .project__info-wrapper {
         display: block;
     }
+    .project__image {
+        margin: auto;
+    }
+    .project__info {
+        padding: 16px 0 0 0;
+    }
     .project__footer {
-        display: block;
+        //display: block;
         height: 100%;
     }
 }

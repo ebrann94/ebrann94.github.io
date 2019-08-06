@@ -60,8 +60,13 @@
     max-width: 540px;
 
     font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 1.4;
     list-style: disc;
+
+    li {
+        margin: 0 0 8px 0;
+        position: relative;
+    }
 }
 
 .project__footer {

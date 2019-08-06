@@ -41,11 +41,6 @@
                         <h1 class="greeting">Hi.</h1>
                         <p class="tagline">I'm Ethan Brann, a front-end developer</p>
                     </div>
-<!--                    <div class="waver"></div>-->
-                    <!-- <div class="about-arrow">
-                        <p class="about-arrow__text">More About Me</p>
-                        <img src="/images/chevron-down-solid.svg" alt="down chevron" >
-                    </div> -->
                 </section>
                 <section id="about" class="section-container">
                     <div class="about__content-container">
@@ -53,8 +48,8 @@
                         <div class="about__text">
                             <p class="about__paragraph">
                                 My name is Ethan, I am a front-end developer specialising in Javascript and React.
-                                I enjoy using code for creative ends such as audio or graphics programming.
-                                I am always looking for next thing to learn and project to get stuck in to.
+                                I enjoy building fun web experiences, especially if I get to be creative.
+                                I will always be looking for next thing to learn and project to get stuck in to.
                             </p>
                             <p class="about__paragraph"> 
                                 I have a B.A. in Creative Music Technology.
@@ -77,7 +72,7 @@
                                 </div>
                                 <div class="skills-list">
                                     <p>HTML5, CSS3 (Sass), JavaScript (ES6), TypeScript</p>
-                                    <p>React, Redux, Vue, p5.js</p>
+                                    <p>React, Redux, Vue.js, p5.js, Handlebars.js</p>
                                     <p>Node.js, Express.js</p>
                                     <p>Jest</p>
                                     <p>MongoDB, Mongoose</p>
@@ -104,20 +99,20 @@
                             <div class="project__card-wrapper">
                                 <div class="project__info-wrapper">
                                     <div class="project__image-container" height="100px" width="150px">
-                                        <img src="/images/project-screenshots/todo-fullstack-compressed.jpg"
+                                        <img src="/images/project-screenshots/todo-fullstack.png"
                                              alt="Check box" class="project__image"/>
                                     </div>
                                     <div class="project__info">
                                         <ul class="project__description">
-                                            <li>Fullstack app built using the MERN stack</li>
-                                            <li>A user can create a list of tasks to do and mark them as complete when
-                                                done
+                                            <li>Fullstack CRUD app built using the MERN stack</li>
+                                            <li>
+                                                Users can create an account and then create multiple task lists
                                             </li>
-                                            <li>User account system implemented using node.js and MongoDB and JWT for
-                                                authentication
+                                            <li>
+                                                Backend is a REST API that persists data to a MongoDB and authenticates users using JWT
                                             </li>
-                                            <li>Allows a user to create an account so they can save their tasks and
-                                                access them elsewhere.
+                                            <li>
+                                                Front-End is a React app that uses Redux for state management and React Router for multiple pages
                                             </li>
                                         </ul>
                                     </div>
@@ -154,17 +149,17 @@
                                     </div>
                                     <div class="project__info">
                                         <ul class="project__description">
-                                            <li>Built to showcase a photographer's portfolio.</li>
-                                            <li>Uses an express.js server using the handlebars templating engine</li>
-                                            <li>Includes a react app where the admin can configure what is shown onthe
-                                                site and upload new content
-                                            </li>
+                                            <li>Website built to showcase a photographer's portfolio</li>
+                                            <li>Backend is an Express.js server using handlebars as the view engine. It builds the pages from JSON data</li>
+                                            <li>Includes  an admin page that is a react app where the content of the site can be managed</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="project__footer">
                                     <div class="project__technology-icons">
                                         <img src="/images/technology/html.svg" alt="html5 logo"
+                                             class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/css3.svg" alt="css3 logo"
                                              class="technology-icon project__tech-icon">
                                         <img src="/images/technology/node.svg" alt="node logo"
                                              class="technology-icon project__tech-icon">
@@ -188,12 +183,10 @@
                                     </div>
                                     <div class="project__info">
                                         <ul class="project__description">
-                                            <li>Drum machine app mimicking the Roland TR-909</li>
-                                            <li>Makes use of the WebAudio API to implement a sequencer and playback of
-                                                audio files
-                                            </li>
-                                            <li>User can control aspects of each sound such as pitch and level</li>
-                                            <li>Written using no frameworks or libraries</li>
+                                            <li>Drum machine app that runs in the browser, inpsired by the Roland TR-909</li>
+                                            <li>Uses the WebAudio API for sound manipulation and playback</li>
+                                            <li>Created an accurate clock for sequencer playback</li>
+                                            <li>Built using no frameworks or libraries</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -215,7 +208,45 @@
                             </div>
                         </div>
                         <div class="project-container">
-                            <h2 class="project__title">Weather</h2>
+                            <h2 class="project__title">Movie App</h2>
+                            <div class="project__card-wrapper">
+                                <div class="project__info-wrapper">
+                                    <div class="project__image-container" height="100px" width="150px">
+                                        <img src="./images/project-screenshots/movie-app.png" alt="Check box"
+                                                class="project__image"/>
+                                    </div>
+                                    <div class="project__info">
+                                        <ul class="project__description">
+                                            <li>Built with React</li>
+                                            <li>Fetched data from TheMovieDB and presents it in a stylish, easy to
+                                                understand way
+                                            </li>
+                                            <li>Uses React Router create a multi-page application</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="project__footer">
+                                    <div class="project__technology-icons">
+                                        <img src="/images/technology/sass.svg" alt="sass logo"
+                                                class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/js.svg" alt="javascript logo"
+                                                class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/react.svg" alt="react logo"
+                                                class="technology-icon project__tech-icon">
+                                        <img src="/images/technology/webpack.svg" alt="webpack logo"
+                                                class="technology-icon project__tech-icon">
+                                    </div>
+                                    <div class="project__links">
+                                        <a href="https://github.com/ebrann94/react-movie-app" target="_blank"
+                                            class="project__github-link project__link">Code</a>
+                                        <a href=" https://ebrann-movie.herokuapp.com/" target="_blank"
+                                            class="project__demo-link project__link">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-container">
+                            <h2 class="project__title">Weather App</h2>
                             <div class="project__card-wrapper">
                                 <div class="project__info-wrapper">
                                     <div class="project__image-container" height="100px" width="150px">
@@ -224,11 +255,9 @@
                                     </div>
                                     <div class="project__info">
                                         <ul class="project__description">
-                                            <li>React SPA</li>
-                                            <li>Fetches and presents the current weather and forecast for a user
-                                                specified location
-                                            </li>
-                                            <li>utilises the Open Weather Map API for weather data</li>
+                                            <li>React single page application</li>
+                                            <li>Shows the current weather and forecast for a user specified location</li>
+                                            <li>Uses the Open Weather Map API to fetch the weather </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -252,45 +281,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="project-container">
-                            <h2 class="project__title">Movie App</h2>
-                            <div class="project__card-wrapper">
-                                <div class="project__info-wrapper">
-                                    <div class="project__image-container" height="100px" width="150px">
-                                        <img src="./images/project-screenshots/movie-app.png" alt="Check box"
-                                             class="project__image"/>
-                                    </div>
-                                    <div class="project__info">
-                                        <ul class="project__description">
-                                            <li>Built with React</li>
-                                            <li>Fetched data from TheMovieDB and presents it in a stylish, easy to
-                                                understand way
-                                            </li>
-                                            <li>Uses React Router create a multi-page application</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="project__footer">
-                                    <div class="project__technology-icons">
-                                        <img src="/images/technology/sass.svg" alt="sass logo"
-                                             class="technology-icon project__tech-icon">
-                                        <img src="/images/technology/js.svg" alt="javascript logo"
-                                             class="technology-icon project__tech-icon">
-                                        <img src="/images/technology/react.svg" alt="react logo"
-                                             class="technology-icon project__tech-icon">
-                                        <img src="/images/technology/webpack.svg" alt="webpack logo"
-                                             class="technology-icon project__tech-icon">
-                                    </div>
-                                    <div class="project__links">
-                                        <a href="https://github.com/ebrann94/react-movie-app" target="_blank"
-                                           class="project__github-link project__link">Code</a>
-                                        <a href=" https://ebrann-movie.herokuapp.com/" target="_blank"
-                                           class="project__demo-link project__link">Demo</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-container">
+                        
+                        <!-- <div class="project-container">
                             <h2 class="project__title">Budget App (WIP)</h2>
                             <div class="project__card-wrapper">
                                 <div class="project__info-wrapper">
@@ -317,11 +309,11 @@
                                     <div class="project__links">
                                         <a href="https://github.com/ebrann94/budget-app" target="_blank"
                                            class="project__github-link project__link">Code</a>
-                                        <!-- <a href="" target="_blank" class="project__demo-link project__link">Demo</a> -->
+                                        <a href="" target="_blank" class="project__demo-link project__link">Demo</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="project-container">
                             <h2 class="project__title">Todo List Frontend</h2>
                             <div class="project__card-wrapper">
@@ -332,9 +324,9 @@
                                     </div>
                                     <div class="project__info">
                                         <ul class="project__description">
-                                            <li>A simple todo list app.</li>
-                                            <li>Built with React.</li>
-                                            <li>Focused on creating a usable, well designed app</li>
+                                            <li>A simple todo list app</li>
+                                            <li>Built with React</li>
+                                            <li>Focused on creating a good user experience</li>
                                         </ul>
                                     </div>
                                 </div>

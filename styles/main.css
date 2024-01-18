@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    color: #333;
+
+    line-height: 1.5;
+
+    /*background-color: #eee;*/
+    background-image: linear-gradient(#fff, #ddd);
+}
+
+.light-grey {
+    color: #555;
+    /*color: black;*/
+    /*opacity: 0.5;*/
+}
+
+.very-light-grey {
+    color: #888;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+.link-arrow {
+    height: 12px;
+    width: 12px;
+    transform: translateY(1px);
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 120px 0;
+}
+
+.section {
+    margin-bottom: 52px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-right: 24px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 8px 0;
+}
+
+a {
+    color: inherit;
+    display: block;
+}
+
+.work-experience-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-experience-title, .projects h2, .links h2 {
+    margin-bottom: 32px
+}
+
+.work-experience-section {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.dates {
+    margin-top: 2px;
+    min-width: 150px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    margin-bottom: 16px;
+}

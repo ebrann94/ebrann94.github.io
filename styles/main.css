@@ -21,6 +21,8 @@ body {
 
     /*background-color: #eee;*/
     background-image: linear-gradient(#fff, #ddd);
+
+    margin: 0;
 }
 
 .light-grey {
@@ -54,7 +56,7 @@ body {
 }
 
 .section {
-    margin-bottom: 52px;
+    margin-bottom: 60px;
 }
 
 .section h2 {
@@ -102,7 +104,7 @@ a {
 .work-experience-section {
     display: flex;
     gap: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .dates {
@@ -118,4 +120,31 @@ a {
 
 .link {
     margin-bottom: 16px;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        /*padding-top: 16px;*/
+        padding: 16px 16px 120px 16px;
+    }
+
+    .work-experience-section {
+        display: block;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }

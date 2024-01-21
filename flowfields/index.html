@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flowfields</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+
+        display: flex;
+        /* flex-direction: column; */
+
+        min-height: 100vh;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 14px;
+        color: rgb(205, 205, 205);
+        background-color: #1b1b1c;
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin: 16px 0 24px 0;
+        font-size: 24px;
+      }
+
+      input {
+        background: transparent;
+        border: solid white 1px;
+        color: inherit;
+        border-radius: 4px;
+        padding: 4px;
+        min-width: 70px;
+      }
+
+      input[type="number"] {
+        width: 70px;
+      }
+
+      input[type="color"] {
+        padding: 0;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .controls-container {
+        /* display: flex; */
+
+        padding: 8px;
+      }
+
+      .controls-container div {
+        flex-grow: 1;
+      }
+
+      .controls-section {
+        margin-bottom: 24px;
+      }
+
+      .input-container {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+
+      .input-container label {
+        margin-right: 8px;
+        min-width: 100px;
+      }
+
+      .canvas-container {
+        flex-grow: 1;
+      }
+
+      #reset-btn {
+        color: inherit;
+        border: white solid 1px;
+        background: inherit;
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls-container">
+      <h1>Controls</h1>
+      <div class="controls-section">
+        <p class="bold">Flowfield</p>
+        <div class="input-container">
+          <label for="field-intensity">Intensity</label>
+          <input type="number" value="5" id="field-intensity" />
+        </div>
+      </div>
+      <div class="controls-section">
+        <p class="bold">Particles</p>
+        <div class="input-container">
+          <label for="num-particles"> Particle count </label>
+          <input type="number" value="1000" id="num-particles" />
+        </div>
+        <div class="input-container">
+          <label for="colour-input"> Particle colour </label>
+          <input type="color" id="colour-input" value="#ffffff" />
+        </div>
+      </div>
+      <div class="controls-section">
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="canvas" />
+    </div>
+
+    <script src="./js/Particle.js"></script>
+    <script src="./js/ParticleSystem.js"></script>
+    <script src="./js/Flowfield.js"></script>
+    <script>
+      const numParticlesInput = document.getElementById("num-particles");
+      const colourInput = document.querySelector("#colour-input");
+      const fieldIntensityInput = document.querySelector("#field-intensity");
+      const canvasContainer = document.querySelector(".canvas-container");
+      const canvas = document.getElementById("canvas");
+
+      let numParticles = numParticlesInput.value;
+      let particleColour = colourInput.value;
+      let fieldIntensity = fieldIntensityInput.value;
+
+      const flowfield = new FlowField();
+      const particleSystem = new ParticleSystem(numParticles, {});
+
+      const resetBtn = document.getElementById("reset-btn");
+      resetBtn.addEventListener("click", () => {
+        flowfield.setIntensity(fieldIntensity);
+        flowfield.init();
+
+        particleSystem.setColour(particleColour);
+        particleSystem.amt = numParticles;
+        particleSystem.reset();
+
+        clear();
+        background(0);
+      });
+
+      numParticlesInput.addEventListener("change", () => {
+        numParticles = numParticlesInput.value;
+      });
+
+      colourInput.addEventListener("change", (e) => {
+        particleColour = colourInput.value;
+      });
+
+      fieldIntensityInput.addEventListener("change", () => {
+        fieldIntensity = fieldIntensityInput.value;
+      });
+
+      const boundingRect = canvasContainer.getBoundingClientRect();
+
+      function setup() {
+        createCanvas(boundingRect.width, boundingRect.height, canvas);
+
+        pixelDensity(window.devicePixelRatio);
+        blendMode(ADD);
+
+        background(0);
+
+        flowfield.init();
+        particleSystem.init();
+      }
+
+      function draw() {
+        particleSystem.update(flowfield);
+      }
+    </script>
+  </body>
+</html>

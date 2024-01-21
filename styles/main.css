@@ -112,6 +112,10 @@ a {
     min-width: 150px;
 }
 
+.project-container {
+    margin-bottom: 24px;
+}
+
 .project-title {
     display: flex;
     justify-content: space-between;
